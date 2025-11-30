@@ -1,17 +1,14 @@
 import { WORDS } from './words';
 
-// Returns a daily word that changes at 8 PM UTC
+// Returns a daily word that changes at 8 AM UTC
 export const getDailyWord = () => {
   const now = new Date();
 
-  // Use previous day if before 8 PM UTC
-  if (now.getUTCHours() < 20) {
+  if (now.getUTCHours() < 8) {
     now.setUTCDate(now.getUTCDate() - 1);
   }
 
   const start = new Date(Date.UTC(2025, 0, 1));
-
-  // Convert to numbers (milliseconds) for arithmetic
   const diffMs = now.getTime() - start.getTime();
   const dayNumber = Math.floor(diffMs / (1000 * 60 * 60 * 24));
 

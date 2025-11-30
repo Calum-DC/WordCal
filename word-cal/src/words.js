@@ -4,8 +4,9 @@ export const WORDS = [
   "testing",
   "awesome",
   "dynamic",
-  "puzzle",
+  "puzzles",
   "letters",
   "profile",
   "network",
+  "brixton",
 ];
