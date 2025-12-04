@@ -169,7 +169,7 @@ function App() {
 
   return (
     <div className='app'>
-      <h1 className="title">WordCal</h1>
+      <h1 className="title">caldle</h1>
       <Grid guesses={guesses} currentGuess={currentGuess} solution={solution} />
       <Keyboard isGameOver={isGameOver} onKeyPress={handleKeyPress} keyboardStates={keyboardStates} />
     </div>
